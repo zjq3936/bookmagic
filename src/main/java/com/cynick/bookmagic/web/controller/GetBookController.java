@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.cynick.bookmagic.service.ContentService;
+
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
@@ -24,6 +26,9 @@ public class GetBookController {
 	@Qualifier("MySqlPipeline")
 	@Autowired
 	private Pipeline mySqlPipeline;
+	
+	@Autowired
+	private ContentService contentService;
 
 	@RequestMapping(value = "/getAllBook")
 	@ResponseBody
@@ -49,6 +54,14 @@ public class GetBookController {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	
+	@RequestMapping(value = "/getAllBookContent")
+	@ResponseBody
+	public void getAllBookContent() {
+		
+		contentService.getBooksContent();
 	}
 
 }

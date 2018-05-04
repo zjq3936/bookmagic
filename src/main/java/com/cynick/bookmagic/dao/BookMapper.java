@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 import com.cynick.bookmagic.entity.Book;
 /**
  * 
- * @author CyNick
- * @date 2018å¹?5æœ?4æ—?
+ * @author Administrator
+ *
  */
 @Repository
 public interface BookMapper {

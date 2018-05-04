@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cynick.bookmagic.dao.BookMapper">
+  <resultMap id="BaseResultMap" type="com.cynick.bookmagic.entity.Book">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="book_name" jdbcType="VARCHAR" property="bookName" />
+    <result column="title_image_url" jdbcType="VARCHAR" property="titleImageUrl" />
+    <result column="source_url" jdbcType="VARCHAR" property="sourceUrl" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, book_name, title_image_url, source_url, description, author, create_time
+  </sql>
+  
+  <select id="getCount" resultType="int">
+    select count(*) from book
+  </select>
+  
+  <select id="getAll" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book
+  </select>
+  
+  <!-- 通过 bookName sourceUrl author 查询图书 -->
+  <select id="getBookByBookNameAndSourceUrlAndAuthor" parameterType="com.cynick.bookmagic.entity.Book" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book 
+	where book_name = #{bookName,jdbcType=VARCHAR} and author = #{author,jdbcType=VARCHAR}
+  </select>
+  
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from book
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  
+  <insert id="saveBooks">
+    insert into book (book_name, title_image_url, 
+      source_url, description, author)
+    values 
+   	<foreach  item="item" collection="list" separator=",">
+	  (#{item.bookName},
+	   #{item.titleImageUrl}, 
+       #{item.sourceUrl},
+       #{item.description},
+       #{item.author}
+      )
+	</foreach>
+  </insert>
+  
+  <insert id="insert" parameterType="com.cynick.bookmagic.entity.Book">
+    insert into book (id, book_name, title_image_url, 
+      source_url, description, author, 
+      create_time)
+    values (#{id,jdbcType=BIGINT}, #{bookName,jdbcType=VARCHAR}, #{titleImageUrl,jdbcType=VARCHAR}, 
+      #{sourceUrl,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cynick.bookmagic.entity.Book">
+    insert into book
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="bookName != null">
+        book_name,
+      </if>
+      <if test="titleImageUrl != null">
+        title_image_url,
+      </if>
+      <if test="sourceUrl != null">
+        source_url,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="author != null">
+        author,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="bookName != null">
+        #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="titleImageUrl != null">
+        #{titleImageUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceUrl != null">
+        #{sourceUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cynick.bookmagic.entity.Book">
+    update book
+    <set>
+      <if test="bookName != null">
+        book_name = #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="titleImageUrl != null">
+        title_image_url = #{titleImageUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceUrl != null">
+        source_url = #{sourceUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cynick.bookmagic.entity.Book">
+    update book
+    set book_name = #{bookName,jdbcType=VARCHAR},
+      title_image_url = #{titleImageUrl,jdbcType=VARCHAR},
+      source_url = #{sourceUrl,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

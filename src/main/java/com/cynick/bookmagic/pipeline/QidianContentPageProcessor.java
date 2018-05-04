@@ -12,21 +12,21 @@ import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 /**
- * 閲囬泦绔犺妭鍐呭
+ * 采集章节信息
  * @author CyNick
- * @date 2018骞?5鏈?4鏃?
+ * @date 2018年5月4日
  */
 @Component("QidianContentPageProcessor")
 public class QidianContentPageProcessor implements PageProcessor {
 
-	// 閮ㄥ垎涓?锛氭姄鍙栫綉绔欑殑鐩稿叧閰嶇疆锛屽寘鎷紪鐮併?佹姄鍙栭棿闅斻?侀噸璇曟鏁扮瓑
+	// 部分一：抓取网站的相关配置，包括编码、抓取间隔、重试次数等
 	private Site site = Site.me().setRetryTimes(3).setSleepTime(1000);
 
 	@Override
-	// process鏄畾鍒剁埇铏?昏緫鐨勬牳蹇冩帴鍙ｏ紝鍦ㄨ繖閲岀紪鍐欐娊鍙栭?昏緫
+	// process是定制爬虫逻辑的核心接口，在这里编写抽取逻辑
 	public void process(Page page) {
 		try {
-			// 閮ㄥ垎浜岋細瀹氫箟濡備綍鎶藉彇椤甸潰淇℃伅锛屽苟淇濆瓨涓嬫潵
+			// 部分二：定义如何抽取页面信息，并保存下来
 			Content content = new Content();
 			content.setTitle(String.valueOf(page.getHtml().xpath("//h3[@class='j_chapterName']/text()")));
 			content.setQidianUpdatetime(DateUtils.parseDate(
@@ -38,7 +38,7 @@ public class QidianContentPageProcessor implements PageProcessor {
 			e.printStackTrace();
 		}
 
-		// 閮ㄥ垎涓夛細浠庨〉闈㈠彂鐜板悗缁殑url鍦板潃鏉ユ姄鍙?
+		// 部分三：从页面发现后续的url地址来抓取
 		page.addTargetRequests(page.getHtml().links()
 				.regex("(^http://www.qidian.com/all\\?orderId=[^&]*&style=[^&]*&pageSize=[^&]*&siteid=[^&]*&pubflag=[^&]*&hiddenField=[^&]*&page=[^&]*$)")
 				.all());

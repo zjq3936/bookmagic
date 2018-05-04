@@ -15,7 +15,11 @@ import com.cynick.bookmagic.service.ContentService;
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
-
+/**
+ * 
+ * @author CyNick
+ * @date 2018年5月4日
+ */
 @Service
 public class ContentServiceImpl implements ContentService {
 
@@ -65,24 +69,24 @@ public class ContentServiceImpl implements ContentService {
 	public void getBooksContent() {
 
 		int count = bookMapper.getCount();
-		// 璁剧疆姣忛〉鏉℃暟
+		// 设置每页的条数
 		int pageSize = 200;
-		// 璁剧疆涓?鍏卞灏戦〉
+		// 计算一共有多少页
 		int pageNum = count % pageSize == 0 ? count / pageSize : count / pageSize + 1;
 		try {
 			for (int i = 0; i < pageNum; i++) {
 				List<Book> list = bookMapper.getAll(i, pageSize);
 				for (Book book : list) {
 					Spider.create(qidianContentPageProcessor)
-							// 浠?"https://github.com/code4craft"寮?濮嬫姄
+							// 设置抓取开始的url
 							.addUrl("http:" + book.getSourceUrl())
-							//璁剧疆鍦ㄦ湰鍦版暟鎹簱涓殑ID
+							//设置父节点的ID，当前指 图书ID
 							.setUUID(String.valueOf(book.getId()))
-							// 鏁版嵁闆嗕繚瀛樺埌mysql
+							// 讲获取的章节信息保存到mysql
 							.addPipeline(mySqlContentPipeline)
-							// 寮?鍚?5涓嚎绋嬫姄鍙?
+							// 设置爬取的线程数量
 							.thread(1)
-							// 鍚姩鐖櫕
+							// 开启爬虫
 							.run();
 
 					Thread.sleep(500);

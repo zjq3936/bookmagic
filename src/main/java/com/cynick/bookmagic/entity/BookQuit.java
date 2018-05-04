@@ -11,6 +11,8 @@ import us.codecraft.webmagic.model.annotation.TargetUrl;
 
 /**
  * 
+ * @author CyNick
+ * @date 2018Äê5ÔÂ4ÈÕ
  */
 //@HelpUrl("https://www.qidian.com/all/*")
 //@TargetUrl("^http://www.qidian.com/all\\?orderId=[^&]*&style=[^&]*&pageSize=[^&]*&siteid=[^&]*&pubflag=[^&]*&hiddenField=[^&]*&page=[^&]*$")

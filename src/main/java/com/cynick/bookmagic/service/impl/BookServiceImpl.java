@@ -10,7 +10,11 @@ import com.cynick.bookmagic.entity.Book;
 import com.cynick.bookmagic.service.BookService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-
+/**
+ * 
+ * @author CyNick
+ * @date 2018年5月4日
+ */
 @Service
 public class BookServiceImpl implements BookService {
 	
@@ -51,7 +55,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public int saveBooks(List<Book> list) {
 		for(Book book : list){
-			//閫氳繃 bookName sourceUrl auth 鍒ゆ柇璇ュ浘涔︽槸鍚﹀瓨鍦?
+			//通过 图书名称和 作者判断，当前图书是否存在
 			List<Book> booklist = bookMapper.getBookByBookNameAndSourceUrlAndAuthor(book);
 			if(booklist.size() == 0){
 				bookMapper.insertSelective(book);

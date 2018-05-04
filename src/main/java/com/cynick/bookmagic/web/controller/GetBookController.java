@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
-
+/**
+ * 采集入口
+ * @author CyNick
+ * @date 2018年5月4日
+ */
 @Controller
 public class GetBookController {
 
@@ -29,13 +33,13 @@ public class GetBookController {
 			for(int i =1;i<=44810;i++){
 				String url = "https://www.qidian.com/all?orderId=&style=1&pageSize=20&siteid=1&pubflag=0&hiddenField=0&page="+i;
 				Spider.create(qidianPageProcessor)
-				// 浠?"https://github.com/code4craft"寮?濮嬫姄
+				// 抓取开始的URL
 				.addUrl(url)
-				// 鏁版嵁闆嗕繚瀛樺埌mysql
+				// 住区结果操作（入库）
 				.addPipeline(mySqlPipeline)
-				// 寮?鍚?5涓嚎绋嬫姄鍙?
+				// 设置开启的线程数量
 				.thread(1)
-				// 鍚姩鐖櫕
+				// 开启爬虫
 				.run();
 				
 				Thread.sleep(500);

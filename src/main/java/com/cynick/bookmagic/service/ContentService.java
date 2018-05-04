@@ -1,7 +1,11 @@
 package com.cynick.bookmagic.service;
 
 import com.cynick.bookmagic.entity.Content;
-
+/**
+ * 
+ * @author CyNick
+ * @date 2018Äê5ÔÂ4ÈÕ
+ */
 public interface ContentService {
     int deleteByPrimaryKey(Long id);
 

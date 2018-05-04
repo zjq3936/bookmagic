@@ -3,7 +3,11 @@ package com.cynick.bookmagic.service;
 import java.util.List;
 
 import com.cynick.bookmagic.entity.Book;
-
+/**
+ * 
+ * @author CyNick
+ * @date 2018Äê5ÔÂ4ÈÕ
+ */
 public interface BookService {
     int deleteByPrimaryKey(Long id);
 

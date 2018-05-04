@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * 
+ * 展示入口
  * @author CyNick
- * @date 2018骞?4鏈?25鏃?
+ * @date 2018年5月4日
  */
 @Controller
 public class ShowBookController {

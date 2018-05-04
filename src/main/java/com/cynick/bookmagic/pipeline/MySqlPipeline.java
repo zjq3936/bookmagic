@@ -1,6 +1,5 @@
 package com.cynick.bookmagic.pipeline;
 /**
- * 鍥句功鍏ュ簱
  */
 import java.util.List;
 
@@ -14,9 +13,9 @@ import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
 /**
- * 
+ * 图书信息入库
  * @author CyNick
- * @date 2018骞?5鏈?4鏃?
+ * @date 2018年5月4日
  */
 @Component("MySqlPipeline")
 public class MySqlPipeline implements Pipeline{

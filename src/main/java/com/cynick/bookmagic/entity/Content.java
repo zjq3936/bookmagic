@@ -7,7 +7,7 @@ import us.codecraft.webmagic.model.AfterExtractor;
 /**
  * 
  * @author CyNick
- * @date 2018å¹?5æœ?4æ—?
+ * @date 2018Äê5ÔÂ4ÈÕ
  */
 public class Content implements AfterExtractor {
     private Long id;

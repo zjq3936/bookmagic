@@ -8,7 +8,11 @@ import us.codecraft.webmagic.model.annotation.ExtractBy;
 import us.codecraft.webmagic.model.annotation.Formatter;
 import us.codecraft.webmagic.model.annotation.HelpUrl;
 import us.codecraft.webmagic.model.annotation.TargetUrl;
-
+/**
+ * 
+ * @author CyNick
+ * @date 2018Äê5ÔÂ4ÈÕ
+ */
 @TargetUrl("https://read.qidian.com/chapter/*")
 @HelpUrl("https://book.qidian.com/info/1011249389#Catalog")
 public class Content2 implements AfterExtractor {

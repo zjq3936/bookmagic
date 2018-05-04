@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author CyNick
- * @date 2018å¹?4æœ?25æ—?
+ * @date 2018Äê5ÔÂ4ÈÕ
  */
 public class Book {
     private Long id;

@@ -7,7 +7,7 @@ import com.cynick.bookmagic.entity.Content;
 /**
  * 
  * @author CyNick
- * @date 2018å¹?5æœ?4æ—?
+ * @date 2018Äê5ÔÂ4ÈÕ
  */
 @Repository
 public interface ContentMapper {

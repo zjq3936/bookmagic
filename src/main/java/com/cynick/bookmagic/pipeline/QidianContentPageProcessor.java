@@ -40,7 +40,7 @@ public class QidianContentPageProcessor implements PageProcessor {
 
 		// 部分三：从页面发现后续的url地址来抓取
 		page.addTargetRequests(page.getHtml().links()
-				.regex("(^http://www.qidian.com/all\\?orderId=[^&]*&style=[^&]*&pageSize=[^&]*&siteid=[^&]*&pubflag=[^&]*&hiddenField=[^&]*&page=[^&]*$)")
+				.regex("(^https://read.qidian.com/chapter/[^&]*/[^&]*$)")
 				.all());
 	}
 

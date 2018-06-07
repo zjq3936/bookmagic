@@ -43,6 +43,7 @@ public class CsdnPageProcessor implements PageProcessor {
 //					.xpath("//div[@class='book-mid-info']/p[@class='intro']/text()").toString());
 //			list.add(book);
 //		}
+		
 		System.out.println(JSON.toJSON(pageList));
 		page.putField("obj", list);
 		// 部分三：从页面发现后续的url地址来抓取

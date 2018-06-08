@@ -25,8 +25,8 @@ public class CsdnMySqlPipeline implements Pipeline{
 	
 	@Override
 	public void process(ResultItems resultItems, Task task) {
-		List<Book> list = resultItems.get("obj");
-		bookService.saveBooks(list);
+//		List<Book> list = resultItems.get("obj");
+//		bookService.saveBooks(list);
 	}
 
 }

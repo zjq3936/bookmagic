@@ -9,6 +9,7 @@ import com.cynick.bookmagic.entity.Book;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
+import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Html;
 
@@ -53,6 +54,21 @@ public class QidianPageProcessor implements PageProcessor {
 	@Override
 	public Site getSite() {
 		return site;
+	}
+	
+	
+	public static void main(String[] args) {
+		String url = "https://www.qidian.com/all?orderId=&style=1&pageSize=50&siteid=1&pubflag=0&hiddenField=0&page="
+				+ 6701;
+		Spider.create(new QidianPageProcessor())
+				// 抓取开始的URL
+				.addUrl(url)
+				// 住区结果操作（入库）
+				.addPipeline(new MySqlPipeline())
+				// 设置开启的线程数量
+				.thread(1)
+				// 开启爬虫
+				.run();
 	}
 
 }

@@ -1,0 +1,661 @@
+2018-06-15 15:52:34.628 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 15:52:35.013 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:35.410 [pool-2-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:35.415 [pool-2-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 15:52:36.520 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:36.628 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 15:52:36.629 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:36.907 [pool-3-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:36.908 [pool-3-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 15:52:36.959 [pool-3-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/51284995', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:36.965 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:36.965 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 15:52:36.965 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:37.214 [pool-4-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:37.216 [pool-4-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 15:52:37.384 [pool-4-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80275542', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:37.386 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:37.386 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 15:52:37.387 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:37.579 [pool-5-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:37.579 [pool-5-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 15:52:37.590 [pool-5-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80221960', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:37.590 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:37.591 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 15:52:37.591 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:37.796 [pool-6-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:37.798 [pool-6-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 15:52:37.830 [pool-6-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153365', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:37.834 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:37.835 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 15:52:37.835 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:38.088 [pool-7-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:38.090 [pool-7-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 15:52:38.104 [pool-7-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153334', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:38.105 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:38.105 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 15:52:38.107 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:38.380 [pool-8-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:38.380 [pool-8-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 15:52:38.390 [pool-8-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153319', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:38.391 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:38.391 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 15:52:38.392 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:38.718 [pool-9-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:38.719 [pool-9-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 15:52:38.723 [pool-9-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80139336', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:38.724 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:38.724 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 15:52:38.724 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:38.897 [pool-10-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:38.898 [pool-10-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 15:52:38.902 [pool-10-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80102261', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:38.902 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:38.903 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 15:52:38.903 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:39.117 [pool-11-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:39.118 [pool-11-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 15:52:39.123 [pool-11-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80101754', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:39.124 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:39.124 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 15:52:39.124 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:39.386 [pool-12-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:39.387 [pool-12-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 15:52:39.393 [pool-12-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073137', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:39.395 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:39.395 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073106
+2018-06-15 15:52:39.396 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:39.632 [pool-13-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:39.634 [pool-13-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073106
+2018-06-15 15:52:39.646 [pool-13-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073106', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:39.648 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:39.648 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073014
+2018-06-15 15:52:39.649 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 15:52:39.866 [pool-14-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 15:52:39.867 [pool-14-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073014
+2018-06-15 15:52:39.880 [pool-14-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073014', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:75) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 15:52:39.881 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 15:52:39.882 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80051979
+2018-06-15 15:52:39.886 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:24.827 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 16:11:25.117 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:25.529 [pool-2-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:25.534 [pool-2-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 16:11:26.660 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:26.760 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 16:11:26.761 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:27.004 [pool-3-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:27.005 [pool-3-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 16:11:27.059 [pool-3-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/51284995', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:27.062 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:27.062 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 16:11:27.063 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:27.315 [pool-4-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:27.316 [pool-4-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 16:11:27.489 [pool-4-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80275542', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:27.490 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:27.490 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 16:11:27.490 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:27.703 [pool-5-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:27.704 [pool-5-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 16:11:27.710 [pool-5-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80221960', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:27.711 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:27.711 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 16:11:27.712 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:27.920 [pool-6-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:27.921 [pool-6-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 16:11:27.925 [pool-6-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153365', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:27.926 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:27.926 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 16:11:27.926 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:28.179 [pool-7-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:28.179 [pool-7-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 16:11:28.191 [pool-7-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153334', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:28.193 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:28.193 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 16:11:28.193 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:28.442 [pool-8-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:28.442 [pool-8-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 16:11:28.450 [pool-8-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153319', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:28.453 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:28.453 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 16:11:28.454 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:28.634 [pool-9-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:28.634 [pool-9-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 16:11:28.638 [pool-9-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80139336', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:28.639 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:28.639 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 16:11:28.639 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:28.808 [pool-10-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:28.809 [pool-10-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 16:11:28.812 [pool-10-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80102261', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:28.813 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:28.813 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 16:11:28.813 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:29.020 [pool-11-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:29.021 [pool-11-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 16:11:29.030 [pool-11-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80101754', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:29.031 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:29.032 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 16:11:29.032 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:29.241 [pool-12-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:29.241 [pool-12-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 16:11:29.247 [pool-12-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073137', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:29.247 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:29.248 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073106
+2018-06-15 16:11:29.248 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:29.473 [pool-13-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:29.473 [pool-13-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073106
+2018-06-15 16:11:29.479 [pool-13-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073106', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:29.481 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:29.481 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073014
+2018-06-15 16:11:29.482 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:29.675 [pool-14-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:29.675 [pool-14-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073014
+2018-06-15 16:11:29.679 [pool-14-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073014', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:29.680 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:29.680 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80051979
+2018-06-15 16:11:29.681 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:29.917 [pool-15-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:29.918 [pool-15-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80051979
+2018-06-15 16:11:29.931 [pool-15-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80051979', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:29.952 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:29.952 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80030971
+2018-06-15 16:11:29.953 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:30.147 [pool-16-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:30.147 [pool-16-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80030971
+2018-06-15 16:11:30.156 [pool-16-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80030971', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:30.157 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:30.160 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80012602
+2018-06-15 16:11:30.165 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:30.379 [pool-17-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:30.380 [pool-17-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80012602
+2018-06-15 16:11:30.387 [pool-17-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80012602', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:30.387 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:30.388 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/79583008
+2018-06-15 16:11:30.388 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:30.620 [pool-18-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:30.620 [pool-18-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/79583008
+2018-06-15 16:11:30.625 [pool-18-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/79583008', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:30.626 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:30.626 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/79982098
+2018-06-15 16:11:30.626 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:30.860 [pool-19-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:30.861 [pool-19-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/79982098
+2018-06-15 16:11:30.868 [pool-19-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/79982098', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:30.868 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:30.869 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/79979823
+2018-06-15 16:11:30.869 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:11:31.084 [pool-20-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:11:31.084 [pool-20-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/79979823
+2018-06-15 16:11:31.087 [pool-20-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/79979823', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:68) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:11:31.088 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:11:31.088 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/79968935
+2018-06-15 16:11:31.088 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:34.925 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 16:12:35.181 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:35.852 [pool-2-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:35.858 [pool-2-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/list/1?t=1
+2018-06-15 16:12:36.975 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:37.098 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 16:12:37.099 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:37.420 [pool-3-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:37.421 [pool-3-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/51284995
+2018-06-15 16:12:37.472 [pool-3-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/51284995', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:37.476 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:37.476 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 16:12:37.476 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:37.715 [pool-4-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:37.716 [pool-4-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80275542
+2018-06-15 16:12:37.914 [pool-4-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80275542', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:37.915 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:37.916 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 16:12:37.916 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:38.101 [pool-5-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:38.102 [pool-5-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80221960
+2018-06-15 16:12:38.114 [pool-5-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80221960', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:38.115 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:38.115 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 16:12:38.116 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:38.406 [pool-6-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:38.406 [pool-6-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153365
+2018-06-15 16:12:38.412 [pool-6-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153365', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:38.412 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:38.412 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 16:12:38.413 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:38.613 [pool-7-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:38.614 [pool-7-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153334
+2018-06-15 16:12:38.629 [pool-7-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153334', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:38.630 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:38.631 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 16:12:38.631 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:38.893 [pool-8-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:38.894 [pool-8-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80153319
+2018-06-15 16:12:38.910 [pool-8-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80153319', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:38.912 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:38.912 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 16:12:38.913 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:39.143 [pool-9-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:39.143 [pool-9-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80139336
+2018-06-15 16:12:39.146 [pool-9-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80139336', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:39.147 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:39.147 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 16:12:39.147 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:39.382 [pool-10-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:39.383 [pool-10-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80102261
+2018-06-15 16:12:39.386 [pool-10-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80102261', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:39.387 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:39.387 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 16:12:39.388 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:39.580 [pool-11-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:39.581 [pool-11-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80101754
+2018-06-15 16:12:39.584 [pool-11-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80101754', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:39.584 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:39.585 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 16:12:39.585 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!
+2018-06-15 16:12:39.793 [pool-12-thread-1] DEBUG us.codecraft.webmagic.utils.CharsetUtils - Auto get charset: UTF-8
+2018-06-15 16:12:39.794 [pool-12-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page success https://blog.csdn.net/bigtree_3721/article/details/80073137
+2018-06-15 16:12:39.802 [pool-12-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='https://blog.csdn.net/bigtree_3721/article/details/80073137', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.NullPointerException
+	at com.cynick.bookmagic.pipeline.CsdnMySqlPipeline.process(CsdnMySqlPipeline.java:67) ~[classes/:?]
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61) ~[webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320) [webmagic-core-0.7.3.jar:?]
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74) [webmagic-core-0.7.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_171]
+2018-06-15 16:12:39.806 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net closed! 1 pages downloaded.
+2018-06-15 16:12:39.806 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue https://blog.csdn.net/bigtree_3721/article/details/80073106
+2018-06-15 16:12:39.807 [main] INFO  us.codecraft.webmagic.Spider - Spider blog.csdn.net started!

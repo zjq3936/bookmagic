@@ -1,11 +1,18 @@
 package com.cynick.bookmagic.web.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSON;
+import com.cynick.bookmagic.pipeline.CsdnMySqlPipeline;
+import com.cynick.bookmagic.pipeline.CsdnPageContentProcessor;
+import com.cynick.bookmagic.pipeline.CsdnPageProcessor;
+import com.cynick.bookmagic.pipeline.MapCache;
 import com.cynick.bookmagic.service.ContentService;
 
 import us.codecraft.webmagic.Spider;
@@ -20,10 +27,16 @@ import us.codecraft.webmagic.processor.PageProcessor;
  */
 @Controller
 public class GetCsdnController {
-
+	
+	protected static MapCache cache = MapCache.single();
+	
 	@Qualifier("CsdnPageProcessor")
 	@Autowired
 	private PageProcessor csdnPageProcessor;
+
+	@Qualifier("CsdnPageContentProcessor")
+	@Autowired
+	private PageProcessor csdnPageContentProcessor;
 
 	@Qualifier("CsdnMySqlPipeline")
 	@Autowired
@@ -31,33 +44,36 @@ public class GetCsdnController {
 
 	@RequestMapping(value = "/getCsdnGigtree")
 	@ResponseBody
-	public void getAllBook() {
+	public void getCsdnGigtree() {
 
-		Thread Thread1 = new Thread() {
-			public void run() {
-				for (int i = 6540; i <= 10000; i++) {
-					String url = "https://blog.csdn.net/bigtree_3721/article/list/"+i+"?t=1";
-					Spider.create(csdnPageProcessor)
-							// 抓取开始的URL
-							.addUrl(url)
-							// 住区结果操作（入库）
-							.addPipeline(csdnMySqlPipeline)
-							// 设置开启的线程数量
-							.thread(1)
-							// 开启爬虫
-							.run();
+		// 爬取所有url 22
+		for (int i = 1; i <= 1; i++) {
+			String url = "https://blog.csdn.net/bigtree_3721/article/list/" + i + "?t=1";
+			Spider.create(csdnPageProcessor)
+					// 抓取开始的URL
+					.addUrl(url)
+					// 住区结果操作（入库）
+					// .addPipeline(new CsdnMySqlPipeline())
+					// 设置开启的线程数量
+					.thread(1)
+					// 开启爬虫
+					.run();
+		}
+		List<String> urllist = cache.get("urlList");
+		System.out.println(JSON.toJSON(urllist));
 
-					try {
-						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
-			}
-		};
-
-		Thread1.start(); //6700
+		// 爬取页面信息
+		for (String url : urllist) {
+			Spider.create(csdnPageContentProcessor)
+					// 抓取开始的URL
+					.addUrl(url)
+					// 住区结果操作（入库）
+					.addPipeline(csdnMySqlPipeline)
+					// 设置开启的线程数量
+					.thread(1)
+					// 开启爬虫
+					.run();
+		}
 
 	}
 

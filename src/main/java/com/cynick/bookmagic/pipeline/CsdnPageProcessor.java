@@ -34,18 +34,18 @@ public class CsdnPageProcessor implements PageProcessor {
 		List<Book> list = new ArrayList<Book>();
 		List<String> pageList = page.getHtml()
 				.xpath("//div[@class='article-item-box csdn-tracking-statistics']/h4/a/@href").all();
-		for (int i = 0; i < pageList.size(); i++) {
-			Book book = new Book();
-			book.setBookName(new Html(pageList.get(i)).xpath("//div[@class='book-mid-info']/h4/a/text()").toString());
-			book.setSourceUrl(new Html(pageList.get(i)).xpath("//div[@class='book-mid-info']/h4/a/@href").toString());
-			book.setTitleImageUrl(
-					new Html(pageList.get(i)).xpath("//div[@class='book-img-box']/a/img/@src").toString());
-			book.setAuthor(new Html(pageList.get(i))
-					.xpath("//div[@class='book-mid-info']/p[@class='author']/a[@class='name']/text()").toString());
-			book.setDescription(new Html(pageList.get(i))
-					.xpath("//div[@class='book-mid-info']/p[@class='intro']/text()").toString());
-			list.add(book);
-		}
+//		for (int i = 0; i < pageList.size(); i++) {
+//			Book book = new Book();
+//			book.setBookName(new Html(pageList.get(i)).xpath("//div[@class='book-mid-info']/h4/a/text()").toString());
+//			book.setSourceUrl(new Html(pageList.get(i)).xpath("//div[@class='book-mid-info']/h4/a/@href").toString());
+//			book.setTitleImageUrl(
+//					new Html(pageList.get(i)).xpath("//div[@class='book-img-box']/a/img/@src").toString());
+//			book.setAuthor(new Html(pageList.get(i))
+//					.xpath("//div[@class='book-mid-info']/p[@class='author']/a[@class='name']/text()").toString());
+//			book.setDescription(new Html(pageList.get(i))
+//					.xpath("//div[@class='book-mid-info']/p[@class='intro']/text()").toString());
+//			list.add(book);
+//		}
 		
 		List<String> urllist = cache.get("urlList");
 		for(String url : pageList){
@@ -56,7 +56,7 @@ public class CsdnPageProcessor implements PageProcessor {
 		}
 		cache.set("urlList", urllist);
 //		System.out.println(JSON.toJSON(pageList));
-		page.putField("obj", list);
+//		page.putField("obj", urllist);
 		// 部分三：从页面发现后续的url地址来抓取
 //		page.addTargetRequests(page.getHtml().links()
 //				.regex("(^http://www.qidian.com/all\\?orderId=[^&]*&style=[^&]*&pageSize=[^&]*&siteid=[^&]*&pubflag=[^&]*&hiddenField=[^&]*&page=[^&]*$)")
@@ -70,14 +70,14 @@ public class CsdnPageProcessor implements PageProcessor {
 
 	
 	public static void main(String[] args) {
-		//爬取所有url
-		for(int i = 1;i<=22;i++){
+		//爬取所有url   22
+		for(int i = 1;i<=1;i++){
 			String url = "https://blog.csdn.net/bigtree_3721/article/list/"+i+"?t=1";
 			Spider.create(new CsdnPageProcessor())
 					// 抓取开始的URL
 					.addUrl(url)
 					// 住区结果操作（入库）
-					.addPipeline(new MySqlPipeline())
+//					.addPipeline(new CsdnMySqlPipeline())
 					// 设置开启的线程数量
 					.thread(1)
 					// 开启爬虫
@@ -87,17 +87,17 @@ public class CsdnPageProcessor implements PageProcessor {
 		System.out.println(JSON.toJSON(urllist));
 		
 		//爬取页面信息
-//		for(String url : urllist){
-//			Spider.create(new CsdnPageProcessor())
-//			// 抓取开始的URL
-//			.addUrl(url)
-//			// 住区结果操作（入库）
-//			.addPipeline(new MySqlPipeline())
-//			// 设置开启的线程数量
-//			.thread(1)
-//			// 开启爬虫
-//			.run();
-//		}
+		for(String url : urllist){
+			Spider.create(new CsdnPageContentProcessor())
+			// 抓取开始的URL
+			.addUrl(url)
+			// 住区结果操作（入库）
+			.addPipeline(new CsdnMySqlPipeline())
+			// 设置开启的线程数量
+			.thread(1)
+			// 开启爬虫
+			.run();
+		}
 	}
 	
 }

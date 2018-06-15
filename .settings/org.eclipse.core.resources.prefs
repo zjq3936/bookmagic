@@ -7,6 +7,7 @@ encoding//src/main/java/com/cynick/bookmagic/entity/BookQuit.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/entity/Content.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/entity/Content2.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/pipeline/CsdnMySqlPipeline.java=GBK
+encoding//src/main/java/com/cynick/bookmagic/pipeline/CsdnPageContentProcessor.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/pipeline/CsdnPageProcessor.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/pipeline/MySqlContentPipeline.java=GBK
 encoding//src/main/java/com/cynick/bookmagic/pipeline/MySqlPipeline.java=GBK

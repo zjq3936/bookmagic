@@ -39,7 +39,7 @@ public class CsdnPageContentProcessor implements PageProcessor {
 		// .xpath("//div[@class='article-item-box
 		// csdn-tracking-statistics']/h4/a/@href").all();
 //		String id = RegexUtil.match(".*/(\\d*)", page.getUrl().toString(), 1);
-		String headContent = "本文为转载文章，原文地址：http://23.23.23.2/admin/article/7</br></br>";
+		String headContent = "本文为转载文章，原文地址："+page.getUrl().toString()+"</br></br>";
 		
 		String title = String.valueOf(page.getHtml().xpath(
 				"//div[@class='blog-content-box']/div[@class='article-title-box']/h1[@class='title-article']/text()"));

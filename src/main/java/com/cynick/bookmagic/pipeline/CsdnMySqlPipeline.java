@@ -55,7 +55,7 @@ public class CsdnMySqlPipeline implements Pipeline{
 			article.setHits(0);
 			article.setModified(getCurrentUnixTime());
 			article.setSlug(null);
-			article.setStatus("publish");
+			article.setStatus("draft");
 			article.setTags((String)resultItems.get("tags"));
 			article.setTitle((String)resultItems.get("title"));
 			article.setType("post");

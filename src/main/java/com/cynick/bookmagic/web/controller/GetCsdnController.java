@@ -44,11 +44,11 @@ public class GetCsdnController {
 
 	@RequestMapping(value = "/getCsdnGigtree")
 	@ResponseBody
-	public void getCsdnGigtree() {
+	public void getCsdnGigtree(String postUrl,int pageSize) {
 
 		// 爬取所有url 22
-		for (int i = 1; i <= 1; i++) {
-			String url = "https://blog.csdn.net/bigtree_3721/article/list/" + i + "?t=1";
+		for (int i = 1; i <= pageSize; i++) {
+			String url = postUrl+"/article/list/" + i + "?t=1";
 			Spider.create(csdnPageProcessor)
 					// 抓取开始的URL
 					.addUrl(url)

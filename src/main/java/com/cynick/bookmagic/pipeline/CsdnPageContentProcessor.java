@@ -1,21 +1,14 @@
 package com.cynick.bookmagic.pipeline;
 
-import java.util.ArrayList;
+import com.cynick.bookmagic.util.html2markdown.HTML2Md;
+import org.springframework.stereotype.Component;
+import us.codecraft.webmagic.Page;
+import us.codecraft.webmagic.Site;
+import us.codecraft.webmagic.processor.PageProcessor;
+
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.springframework.stereotype.Component;
-
-import com.alibaba.fastjson.JSON;
-import com.cynick.bookmagic.entity.Book;
-import com.cynick.bookmagic.util.RegexUtil;
-
-import us.codecraft.webmagic.Page;
-import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.selector.Html;
 
 /**
  * ²É¼¯csdn
@@ -49,6 +42,8 @@ public class CsdnPageContentProcessor implements PageProcessor {
 				"//div[@class='article-bar-bottom']/div[@class='tags-box artic-tag-box']/a[@class='tag-link']/text()").all());
 		// content = delHTMLTag(content);
 		// page.putField("id", id);
+
+		content = HTML2Md.convert(content, "UTF-8");
 		page.putField("title", title);
 		page.putField("obj", headContent+content);
 		page.putField("tags", tags);

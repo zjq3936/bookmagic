@@ -1,18 +1,16 @@
 package com.cynick.bookmagic.pipeline;
-import java.util.Date;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import com.cynick.bookmagic.dao.ContentVoMapper;
 import com.cynick.bookmagic.entity.ContentVo;
 import com.cynick.bookmagic.exception.Types;
 import com.cynick.bookmagic.service.BookService;
 import com.cynick.bookmagic.service.MetaService;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
+
+import java.util.Date;
 /**
  * csdn Èë¿â
  * @author CyNick

@@ -8,8 +8,24 @@ public class Testbed {
   public static void main(String[] args) {
     URL url;
     try {
+      String html = "<ul>\n" +
+              "  <li>\n" +
+              "    <p>Add: live templates starting with <code>.</code></p>\n" +
+              "    <table>\n" +
+              "      <thead>\n" +
+              "        <tr><th> Element       </th><th> Abbreviation    </th><th> Expansion                                               </th></tr>\n" +
+              "      </thead>\n" +
+              "      <tbody>\n" +
+              "        <tr><td> Abbreviation  </td><td> <code>.abbreviation</code> </td><td> <code>*[]:</code>                                                 </td></tr>\n" +
+              "        <tr><td> Code fence    </td><td> <code>.codefence</code>    </td><td> ``` ... ```                                       </td></tr>\n" +
+              "        <tr><td> Explicit link </td><td> <code>.link</code>         </td><td> <code>[]()</code>                                                  </td></tr>\n" +
+              "      </tbody>\n" +
+              "    </table>\n" +
+              "  </li>\n" +
+              "</ul>";
+
       url = new URL("http://jsoup.org/");
-      String parsedText = HTML2Md.convert(url, 30000);
+      String parsedText = HTML2Md.convert(html, "UTF-8");
       System.out.println(parsedText);
 
       // test parse local html file

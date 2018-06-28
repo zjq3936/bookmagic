@@ -1,23 +1,17 @@
 package com.cynick.bookmagic.web.controller;
 
-import java.util.List;
-
+import com.alibaba.fastjson.JSON;
+import com.cynick.bookmagic.pipeline.MapCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.alibaba.fastjson.JSON;
-import com.cynick.bookmagic.pipeline.CsdnMySqlPipeline;
-import com.cynick.bookmagic.pipeline.CsdnPageContentProcessor;
-import com.cynick.bookmagic.pipeline.CsdnPageProcessor;
-import com.cynick.bookmagic.pipeline.MapCache;
-import com.cynick.bookmagic.service.ContentService;
-
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
+
+import java.util.List;
 
 /**
  * 采集入口
